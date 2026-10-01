@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caja Rápida · Demo de facturación e inventario</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>Caja Rápida</h1>
+    <p>Factura equipos de seguridad en segundos y mira cómo baja el inventario. Demo sin servidor.</p>
+  </div>
+  <div class="kpis">
+    <div class="kpi"><b id="kv">$0</b><span>Ventas de hoy</span></div>
+    <div class="kpi"><b id="kf">0</b><span>Facturas</span></div>
+    <div class="kpi"><b id="kl">0</b><span>Stock bajo</span></div>
+    <button class="bell" id="bell" aria-label="Productos agotados">🔔<span class="dot" id="dot" hidden></span></button>
+  </div>
+</header>
+<main>
+  <section>
+    <div class="tools">
+      <label for="sortBy">Ordenar por</label>
+      <select id="sortBy"><option value="name">Nombre</option><option value="stock">Cantidad en stock</option></select>
+      <button id="sortDir" aria-label="Cambiar dirección del orden">A → Z</button>
+    </div>
+    <div class="grid" id="grid" aria-label="Productos"></div>
+  </section>
+  <aside class="ticket" aria-live="polite">
+    <h2>Factura <span id="num"></span></h2><small id="fecha"></small>
+    <div id="items"></div>
+    <div class="tot"><span>Subtotal</span><span id="sub">$0</span></div>
+    <div class="tot"><span>IVA 19%</span><span id="iva">$0</span></div>
+    <div class="tot g"><span>Total</span><span id="tot">$0</span></div>
+    <button class="btn" id="fac" disabled>Facturar</button>
+    <button class="btn s" id="imp">Imprimir factura</button>
+    <button class="btn s" id="rst">Reiniciar demo</button>
+    <div class="msg" id="msg"></div>
+  </aside>
+</main>
+<footer>Precios en COP con IVA incluido en el precio de lista. Los datos se guardan solo en tu navegador.</footer>
+<dialog id="modal">
+  <h2>Productos agotados</h2>
+  <p id="mdesc"></p>
+  <ul id="mlist"></ul>
+  <button class="btn s" id="mclose">Cerrar</button>
+</dialog>
+<div class="toast" id="toast" role="status"></div>
+<div id="receipt"></div>
+<script src="app.js"></script>
+</body>
+</html>
