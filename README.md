@@ -1,4 +1,4 @@
-<div align="center">
+<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/6b2336d5-03f8-4718-a6ef-3218fac0b8cc" /><div align="center">
 
 # 🧾 Caja Rápida
 
@@ -11,10 +11,10 @@ Factura en segundos, mira bajar el stock en tiempo real y recibe alertas cuando 
 ![Sin dependencias](https://img.shields.io/badge/dependencias-0-0f9d75)
 ![Responsive](https://img.shields.io/badge/responsive-sí-14213d)
 
-### [🔗 Ver demo en vivo](https://TU-USUARIO.github.io/caja-rapida/)
+### [🔗 Ver demo en vivo]([https://TU-USUARIO.github.io/caja-rapida/](https://cajastocksimulator.netlify.app/))
 
 <!-- Reemplaza con una captura real: docs/captura.png -->
-<img src="docs/captura.png" alt="Captura de Caja Rápida" width="860">
+<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/84312394-ed03-42d9-9e4a-e7c22eb1c4b9" />
 
 </div>
 
